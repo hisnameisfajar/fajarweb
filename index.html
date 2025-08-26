@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habbatasauda As-syifa - Perkuat Daya Tahan Tubuh Keluarga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            margin: -20px -20px 40px -20px;
+            border-radius: 20px 20px 0 0;
+            color: white;
+        }
+
+        .headline {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .sub-headline {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #2c5530;
+            border-left: 5px solid #4a7c59;
+            padding-left: 15px;
+        }
+
+        .problem-item {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        .solution-box {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4f1d4 100%);
+            border: 2px solid #4a7c59;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .solution-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5530;
+            margin-bottom: 15px;
+        }
+
+        .solution-text {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .benefit-item {
+            background: white;
+            border: 2px solid #e8f5e8;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: #4a7c59;
+        }
+
+        .benefit-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2c5530;
+            margin-bottom: 8px;
+        }
+
+        .benefit-desc {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .testimonial {
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
+            border-left: 5px solid #2196F3;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: #2196F3;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: #2c5530;
+            text-align: right;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #ee5a24;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            border: 3px solid white;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+            background: #f8f9fa;
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+        }
+
+        .cta-button.secondary:hover {
+            background: white;
+            color: #ee5a24;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .headline {
+                font-size: 2.2rem;
+            }
+
+            .sub-headline {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .cta-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8e6cf 0%, #dcedc8 100%);
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="headline">Keluarga Sehat, Hidup Lebih Tenang!</h1>
+            <p class="sub-headline">Habbatasauda As-syifa - Herbal alami untuk memperkuat daya tahan tubuh seluruh keluarga</p>
+        </div>
+
+        <!-- Problem & Solution Section -->
+        <div class="section">
+            <h2 class="section-title">Apakah Anda Sering Mengalami Ini?</h2>
+            
+            <div class="problem-item">
+                😰 <strong>Anak mudah sakit</strong> - Flu, batuk, demam datang silih berganti. Bikin khawatir dan pengeluaran membengkak untuk obat-obatan.
+            </div>
+            
+            <div class="problem-item">
+                😵 <strong>Badan lemas terus</strong> - Meski sudah istirahat, kok rasanya tenaga nggak pernah full. Aktivitas jadi terganggu.
+            </div>
+            
+            <div class="problem-item">
+                💸 <strong>Biaya dokter mahal</strong> - Setiap kali ada yang sakit, dompet jadi tipis. Belum lagi obat kimia yang efek sampingnya bikin was-was.
+            </div>
+            
+            <div class="problem-item">
+                😟 <strong>Khawatir terus-menerus</strong> - Sebagai orang tua, pasti deg-degan kalau ada anggota keluarga yang drop. Tidur pun jadi nggak nyenyak.
+            </div>
+
+            <div class="solution-box">
+                <h3 class="solution-title">Saatnya Beralih ke Solusi Alami!</h3>
+                <p class="solution-text">Habbatasauda As-syifa hadir sebagai <span class="highlight">benteng pertahanan alami</span> untuk keluarga Anda. Terbuat dari jintan hitam pilihan yang sudah terbukti selama berabad-abad mampu memperkuat sistem imun tubuh. <strong>Tanpa efek samping, aman untuk segala usia!</strong></p>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="section">
+            <h2 class="section-title">Manfaat yang Langsung Anda Rasakan</h2>
+            
+            <div class="benefit-item">
+                <div class="benefit-title">🛡️ Daya Tahan Tubuh Meningkat Drastis</div>
+                <p class="benefit-desc">Dalam 2-3 minggu konsumsi rutin, tubuh jadi lebih kebal terhadap virus dan bakteri. Anak-anak jarang sakit, Anda pun lebih fit menjalani aktivitas.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-title">⚡ Energi Berlimpah Sepanjang Hari</div>
+                <p class="benefit-desc">Kandungan alami jintan hitam membantu metabolisme tubuh. Hasilnya? Stamina terjaga, nggak gampang capek, dan mood jadi lebih stabil.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-title">💰 Hemat Biaya Kesehatan Keluarga</div>
+                <p class="benefit-desc">Investasi satu botol bisa menghemat ratusan ribu rupiah biaya dokter dan obat. Pencegahan jauh lebih murah daripada pengobatan!</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-title">🌿 100% Halal dan Tanpa Efek Samping</div>
+                <p class="benefit-desc">Terbuat dari bahan alami pilihan, sudah tersertifikasi halal MUI. Aman dikonsumsi jangka panjang oleh seluruh anggota keluarga, dari balita hingga lansia.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-title">😌 Tidur Nyenyak, Pikiran Tenang</div>
+                <p class="benefit-desc">Ketika kesehatan keluarga terjaga, Anda bisa tidur dengan tenang. Nggak perlu lagi khawatir berlebihan soal kesehatan orang-orang tercinta.</p>
+            </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="section">
+            <h2 class="section-title">Bukti Nyata dari Keluarga Indonesia</h2>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">Alhamdulillah, sejak rutin minum Habbatasauda As-syifa 3 bulan lalu, anak saya yang dulu sering demam sekarang jarang banget sakit. Kalau pun ada gejala flu, cepet sembuhnya. Yang paling saya syukuri, pengeluaran untuk obat turun sampai 70%!</p>
+                <p class="testimonial-author">- Bu Sari, Ibu Rumah Tangga dari Yogyakarta</p>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">Sebagai kepala keluarga, saya merasa tenang banget setelah sekeluarga rutin konsumsi produk ini. Istri saya yang dulu gampang capek sekarang energinya full terus. Anak-anak pun jadi jarang izin sakit dari sekolah. Worth it banget!</p>
+                <p class="testimonial-author">- Pak Budi, Ayah 2 Anak dari Surabaya</p>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2 class="cta-title pulse">Jangan Tunggu Sampai Sakit!</h2>
+            <p class="cta-subtitle">Mulai lindungi keluarga Anda hari ini juga. Konsultasi GRATIS dengan ahli herbal kami.</p>
+            
+            <div class="cta-buttons">
+                <a href="https://wa.me/6289736433435?text=Halo,%20saya%20tertarik%20dengan%20Habbatasauda%20As-syifa.%20Bisa%20konsultasi%20dulu?" class="cta-button pulse">
+                    🔥 KONSULTASI GRATIS SEKARANG
+                </a>
+                
+                <a href="https://wa.me/6289736433435?text=Saya%20mau%20pesan%20Habbatasauda%20As-syifa%20untuk%20keluarga" class="cta-button secondary">
+                    💬 PESAN LANGSUNG VIA WHATSAPP
+                </a>
+                
+                <a href="https://wa.me/6289736433435?text=Boleh%20tanya-tanya%20dulu%20tentang%20produk%20herbal%20ini?" class="cta-button">
+                    ❓ TANYA-TANYA DULU YUK
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple animation for elements when they come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Add fade-in effect to benefit items
+        document.addEventListener('DOMContentLoaded', () => {
+            const benefitItems = document.querySelectorAll('.benefit-item');
+            benefitItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                observer.observe(item);
+            });
+
+            // Add hover effect to CTA buttons
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons.forEach(button => {
+                button.addEventListener('mouseenter', () => {
+                    button.style.transform = 'translateY(-3px) scale(1.05)';
+                });
+                button.addEventListener('mouseleave', () => {
+                    button.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
