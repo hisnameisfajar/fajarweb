@@ -1,0 +1,123 @@
+/* ============================================================
+   Skills
+   ============================================================ */
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.skill-group {
+  padding: clamp(1.6rem, 3.5vw, 2.2rem);
+  transition: transform 0.4s var(--ease), border-color 0.4s var(--ease),
+    box-shadow 0.4s var(--ease);
+}
+
+.skill-group:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.skill-group__head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.6rem;
+}
+
+.skill-group__icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 13px;
+  background: rgba(108, 140, 255, 0.12);
+  border: 1px solid var(--surface-border);
+  color: var(--accent);
+}
+
+.skill-group__title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.skill-group__count {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-dim);
+}
+
+/* Individual skill rows */
+.skill {
+  margin-bottom: 1.15rem;
+}
+
+.skill:last-child {
+  margin-bottom: 0;
+}
+
+.skill__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.45rem;
+}
+
+.skill__name {
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.skill__pct {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.skill__track {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.skill__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: 999px;
+  background: var(--gradient-accent);
+  box-shadow: 0 0 12px var(--accent-glow);
+  transition: width 1.1s var(--ease);
+}
+
+/* subtle moving shine on the fill */
+.skill__fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shine 2.4s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  60%, 100% { transform: translateX(100%); }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 760px) {
+  .skills__grid { grid-template-columns: 1fr; }
+}

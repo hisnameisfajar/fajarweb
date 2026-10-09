@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Fajar Sahuri — Full Stack AI Engineer. Membangun pengalaman digital cerdas dengan AI dan teknologi web modern." />
+  <title>Fajar Sahuri — Full Stack AI Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components/navbar.css" />
+  <link rel="stylesheet" href="css/components/hero.css" />
+  <link rel="stylesheet" href="css/components/about.css" />
+  <link rel="stylesheet" href="css/components/skills.css" />
+  <link rel="stylesheet" href="css/components/projects.css" />
+  <link rel="stylesheet" href="css/components/experience.css" />
+  <link rel="stylesheet" href="css/components/testimonials.css" />
+  <link rel="stylesheet" href="css/components/contact.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+</head>
+<body>
+  <!-- Animated gradient background -->
+  <div class="bg-gradient" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="#hero" class="nav__brand">
+        <span class="nav__brand-mark">FS</span>
+        <span class="nav__brand-text">Fajar Sahuri</span>
+      </a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#hero" class="nav__link is-active">Beranda</a></li>
+        <li><a href="#about" class="nav__link">Tentang</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Project</a></li>
+        <li><a href="#experience" class="nav__link">Pengalaman</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Kontak</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero section" id="hero">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <span class="hero__badge reveal">
+            <span class="hero__badge-dot"></span>
+            Available for opportunities
+          </span>
+
+          <h1 class="hero__title reveal">
+            Halo, saya <span class="hero__name">Fajar Sahuri</span>
+          </h1>
+
+          <p class="hero__role reveal">
+            <span class="hero__typewriter" id="typewriter"></span><span class="hero__cursor">|</span>
+          </p>
+
+          <p class="hero__tagline reveal">
+            Membangun pengalaman digital cerdas dengan AI dan teknologi web modern.
+          </p>
+
+          <div class="hero__meta reveal">
+            <span class="hero__meta-item">📍 Jakarta, Indonesia</span>
+            <span class="hero__meta-item">✉️ fajar@prestasijunior.org</span>
+          </div>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">
+              Lihat Project
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="assets/resume.pdf" class="btn btn--ghost" download>
+              Download Resume
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__photo-wrap">
+            <div class="hero__photo-glow"></div>
+            <div class="hero__photo" role="img" aria-label="Foto profil Fajar Sahuri">
+              <svg viewBox="0 0 24 24" width="90" height="90" fill="none" stroke="currentColor" stroke-width="1.3">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>
+              </svg>
+              <span class="hero__photo-label">Your Photo</span>
+            </div>
+            <span class="hero__chip hero__chip--1">AI</span>
+            <span class="hero__chip hero__chip--2">{ } Code</span>
+            <span class="hero__chip hero__chip--3">⚡ Fast</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Gulir ke bawah">
+        <span class="hero__scroll-mouse"></span>
+        <span class="hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">01 — Tentang</span>
+          <h2 class="section__title">Mengenal <span class="text-accent">Lebih Dekat</span></h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__bio reveal">
+            <div class="glass about__card">
+              <p class="about__lead">
+                Fajar Sahuri adalah seorang <strong>full-stack AI engineer</strong> yang
+                bersemangat, dengan keahlian di pengembangan frontend, sistem backend,
+                deployment cloud, dan aplikasi berbasis AI.
+              </p>
+              <p>
+                Ia berspesialisasi dalam membangun platform web yang skalabel, perangkat
+                otomasi cerdas, dan pengalaman pengguna modern. Fajar senang memecahkan
+                masalah dunia nyata melalui arsitektur yang bersih dan teknologi inovatif.
+              </p>
+
+              <ul class="about__highlights">
+                <li><span class="about__dot"></span> Frontend & backend development end-to-end</li>
+                <li><span class="about__dot"></span> Integrasi AI & otomasi cerdas</li>
+                <li><span class="about__dot"></span> Cloud deployment & arsitektur skalabel</li>
+                <li><span class="about__dot"></span> Fokus pada clean code & pengalaman pengguna</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about__stats">
+            <div class="glass stat-card reveal">
+              <span class="stat-card__num" data-count="5" data-suffix="+">0</span>
+              <span class="stat-card__label">Tahun Pengalaman</span>
+            </div>
+            <div class="glass stat-card reveal">
+              <span class="stat-card__num" data-count="40" data-suffix="+">0</span>
+              <span class="stat-card__label">Project Selesai</span>
+            </div>
+            <div class="glass stat-card reveal">
+              <span class="stat-card__num" data-count="25" data-suffix="+">0</span>
+              <span class="stat-card__label">Klien Puas</span>
+            </div>
+            <div class="glass stat-card reveal">
+              <span class="stat-card__num" data-count="15" data-suffix="+">0</span>
+              <span class="stat-card__label">Teknologi Dikuasai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">02 — Skills</span>
+          <h2 class="section__title">Teknologi &amp; <span class="text-accent">Keahlian</span></h2>
+        </header>
+
+        <div class="skills__grid">
+          <!-- Frontend -->
+          <article class="glass skill-group reveal">
+            <div class="skill-group__head">
+              <span class="skill-group__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m0 6v4a2 2 0 0 0 2 2h4m6 0h4a2 2 0 0 0 2-2v-4m0-6V5a2 2 0 0 0-2-2h-4"/></svg>
+              </span>
+              <h3 class="skill-group__title">Frontend<span class="skill-group__count">5 teknologi</span></h3>
+            </div>
+
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">React</span><span class="skill__pct">95%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="95"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Next.js</span><span class="skill__pct">92%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="92"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Tailwind CSS</span><span class="skill__pct">90%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="90"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">TypeScript</span><span class="skill__pct">88%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="88"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Framer Motion</span><span class="skill__pct">85%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="85"></span></div>
+            </div>
+          </article>
+
+          <!-- Backend -->
+          <article class="glass skill-group reveal">
+            <div class="skill-group__head">
+              <span class="skill-group__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/><path d="M7 6h.01M7 12h.01M7 18h.01"/></svg>
+              </span>
+              <h3 class="skill-group__title">Backend<span class="skill-group__count">4 teknologi</span></h3>
+            </div>
+
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Node.js</span><span class="skill__pct">93%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="93"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Express.js</span><span class="skill__pct">90%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="90"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Python</span><span class="skill__pct">88%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="88"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">FastAPI</span><span class="skill__pct">86%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="86"></span></div>
+            </div>
+          </article>
+
+          <!-- Database -->
+          <article class="glass skill-group reveal">
+            <div class="skill-group__head">
+              <span class="skill-group__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+              </span>
+              <h3 class="skill-group__title">Database<span class="skill-group__count">3 teknologi</span></h3>
+            </div>
+
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">PostgreSQL</span><span class="skill__pct">90%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="90"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">MongoDB</span><span class="skill__pct">88%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="88"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Firebase</span><span class="skill__pct">84%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="84"></span></div>
+            </div>
+          </article>
+
+          <!-- AI & Cloud -->
+          <article class="glass skill-group reveal">
+            <div class="skill-group__head">
+              <span class="skill-group__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.34 9.5 4 4 0 0 0 7 17.5"/><path d="M12 12v6m0-6l-2 2m2-2l2 2"/></svg>
+              </span>
+              <h3 class="skill-group__title">AI &amp; Cloud<span class="skill-group__count">5 teknologi</span></h3>
+            </div>
+
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">OpenAI API</span><span class="skill__pct">92%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="92"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">LangChain</span><span class="skill__pct">87%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="87"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Docker</span><span class="skill__pct">85%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="85"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">AWS</span><span class="skill__pct">83%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="83"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__meta"><span class="skill__name">Vercel</span><span class="skill__pct">90%</span></div>
+              <div class="skill__track"><span class="skill__fill" data-level="90"></span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">03 — Project</span>
+          <h2 class="section__title">Project <span class="text-accent">Unggulan</span></h2>
+        </header>
+
+        <div class="projects__grid">
+          <!-- Project 1 -->
+          <article class="glass project-card reveal">
+            <div class="project-card__media">
+              <span class="project-card__index">01</span>
+              <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+              <div class="project-card__overlay">
+                <a href="https://github.com/fajarsahuridev" target="_blank" rel="noopener" class="project-card__action">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7 0-.7 0-.7 1.2 0 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.3 1.2-3.2 0-.3-.5-1.5.2-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.7 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  Code
+                </a>
+                <a href="#" class="project-card__action project-card__action--primary">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">AI Task Manager</h3>
+              <p class="project-card__desc">Aplikasi produktivitas cerdas dengan bantuan AI untuk melakukan prioritas dan penjadwalan tugas.</p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">OpenAI API</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass project-card reveal">
+            <div class="project-card__media">
+              <span class="project-card__index">02</span>
+              <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg>
+              <div class="project-card__overlay">
+                <a href="https://github.com/fajarsahuridev" target="_blank" rel="noopener" class="project-card__action">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7 0-.7 0-.7 1.2 0 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.3 1.2-3.2 0-.3-.5-1.5.2-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.7 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  Code
+                </a>
+                <a href="#" class="project-card__action project-card__action--primary">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Smart Chat Assistant</h3>
+              <p class="project-card__desc">Chatbot AI real-time dengan conversational memory dan context management.</p>
+              <div class="project-card__tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="glass project-card reveal">
+            <div class="project-card__media">
+              <span class="project-card__index">03</span>
+              <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 5-6"/></svg>
+              <div class="project-card__overlay">
+                <a href="https://github.com/fajarsahuridev" target="_blank" rel="noopener" class="project-card__action">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7 0-.7 0-.7 1.2 0 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.3 1.2-3.2 0-.3-.5-1.5.2-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.7 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  Code
+                </a>
+                <a href="#" class="project-card__action project-card__action--primary">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">DevOps Monitoring Dashboard</h3>
+              <p class="project-card__desc">Dashboard monitoring server dan analitik secara real-time dengan grafik interaktif.</p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Chart.js</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Work Experience ===== -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">04 — Pengalaman</span>
+          <h2 class="section__title">Perjalanan <span class="text-accent">Profesional</span></h2>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="glass timeline__card">
+              <span class="timeline__period">2023 — Sekarang</span>
+              <h3 class="timeline__role">Senior Full Stack Engineer</h3>
+              <p class="timeline__company">di <span>Novatech Solutions</span></p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="glass timeline__card">
+              <span class="timeline__period">2021 — 2023</span>
+              <h3 class="timeline__role">Frontend Developer</h3>
+              <p class="timeline__company">di <span>PixelForge Labs</span></p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="glass timeline__card">
+              <span class="timeline__period">2019 — 2021</span>
+              <h3 class="timeline__role">Junior Software Engineer</h3>
+              <p class="timeline__company">di <span>CloudNest AI</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">05 — Testimoni</span>
+          <h2 class="section__title">Apa Kata <span class="text-accent">Mereka</span></h2>
+        </header>
+
+        <div class="testimonials__grid">
+          <article class="glass testimonial reveal">
+            <span class="testimonial__quote" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial__text">Fajar is an exceptional engineer who consistently delivers beyond expectations. His ability to bridge AI capabilities with practical user needs is remarkable. He transformed our platform's intelligence layer in a way that measurably improved user engagement.</p>
+            <div class="testimonial__person">
+              <span class="testimonial__avatar" aria-hidden="true">AF</span>
+              <div>
+                <p class="testimonial__name">Ahmad Fauzi</p>
+                <p class="testimonial__role">CTO, Prestasi Junior Indonesia</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass testimonial reveal">
+            <span class="testimonial__quote" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial__text">Working with Fajar was a pleasure. He has a rare talent for turning complex data into clear, actionable insights. His dashboards became the go-to tool for our entire leadership team, and he always brought ideas that went far beyond the initial brief.</p>
+            <div class="testimonial__person">
+              <span class="testimonial__avatar" aria-hidden="true">SR</span>
+              <div>
+                <p class="testimonial__name">Siti Rahayu</p>
+                <p class="testimonial__role">Product Manager, PT Indo</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass testimonial reveal">
+            <span class="testimonial__quote" aria-hidden="true">&ldquo;</span>
+            <p class="testimonial__text">Fajar's technical depth combined with his product mindset makes him stand out. He delivered a full-stack AI feature in record time without compromising code quality. I'd recommend him without hesitation to any team looking for a high-impact engineer.</p>
+            <div class="testimonial__person">
+              <span class="testimonial__avatar" aria-hidden="true">BS</span>
+              <div>
+                <p class="testimonial__name">Budi Santoso</p>
+                <p class="testimonial__role">Lead Engineer, PT. Technesia</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">06 — Kontak</span>
+          <h2 class="section__title">Mari <span class="text-accent">Berkolaborasi</span></h2>
+        </header>
+
+        <div class="contact__grid">
+          <!-- Info + map -->
+          <div class="contact__info reveal">
+            <div class="glass contact__details">
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg>
+                </span>
+                <div>
+                  <p class="contact__detail-label">Email</p>
+                  <p class="contact__detail-value">fajar@prestasijunior.org</p>
+                </div>
+              </div>
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                </span>
+                <div>
+                  <p class="contact__detail-label">Telepon</p>
+                  <p class="contact__detail-value">08512345678</p>
+                </div>
+              </div>
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <p class="contact__detail-label">Lokasi</p>
+                  <p class="contact__detail-value">Jakarta, Indonesia</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__map" role="img" aria-label="Peta lokasi Jakarta, Indonesia (placeholder)">
+              <svg class="contact__map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="contact__map-label">Jakarta, Indonesia</span>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <form class="glass contact__form reveal" id="contact-form" novalidate>
+            <div class="field" id="field-name">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required />
+              <span class="field__error" data-error-for="name">Mohon isi nama Anda.</span>
+            </div>
+            <div class="field" id="field-email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+              <span class="field__error" data-error-for="email">Masukkan alamat email yang valid.</span>
+            </div>
+            <div class="field" id="field-message">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang project Anda..." required></textarea>
+              <span class="field__error" data-error-for="message">Pesan minimal 10 karakter.</span>
+            </div>
+
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn--primary contact__submit">
+              Kirim Pesan
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__brand-name">
+            <span class="footer__brand-mark">FS</span>
+            Fajar Sahuri
+          </span>
+          <p class="footer__tagline">Membangun pengalaman digital cerdas dengan AI dan teknologi web modern.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Navigasi footer">
+          <a href="#about">Tentang</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Project</a>
+          <a href="#experience">Pengalaman</a>
+          <a href="#testimonials">Testimoni</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+
+        <div class="footer__social">
+          <a href="https://github.com/fajarsahuridev" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7 0-.7 0-.7 1.2 0 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.3 1.2-3.2 0-.3-.5-1.5.2-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.7 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/fajarsahuridev" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.3-2.6 4.8-2.6 5.1 0 6.1 3.4 6.1 7.8V24h-5v-7c0-1.7 0-3.9-2.4-3.9s-2.7 1.8-2.7 3.7V24H8z"/></svg>
+          </a>
+          <a href="https://x.com/fajarsahuridev" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.9 2H22l-7.3 8.3L23 22h-6.6l-5.2-6.8L5.2 22H2l7.8-8.9L1.5 2h6.8l4.7 6.2zm-1.2 18h1.8L7.4 3.8H5.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="year"></span> Fajar Sahuri. All rights reserved.</p>
+        <p class="footer__copy">Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
